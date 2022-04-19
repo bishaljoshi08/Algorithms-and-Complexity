@@ -29,7 +29,7 @@ class BinarySearchTree:
                 self._size += 1
             else:
                 self.add_recursion(subtree.left,key,value)
-        elif subtree.key < key:
+        else:
             if subtree.right == None:
                 subtree.right = self.Node(key,value)
                 self._size += 1
